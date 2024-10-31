@@ -1,0 +1,760 @@
+/* Definindo a fonte padrão e plano de fundo do WebSite */
+html{
+    /* Plano de fundo do WebSite */
+    background-color: #e8e8e8;
+
+    /* Fonte de texto padrão do WebSite */
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    /* Proibição de scroll horizontal em caso de posição além dos 100% */
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Retirando a borda branca que ficava em todo WebSite */
+body{
+    padding:0;
+    margin:0;
+}
+
+
+/* Definindo o espaço do cabeçalho do WebSite */
+.header-css{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+  
+/* Logo da empresa no rodapé do WebSite */
+.image-css{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    z-index: 3;
+
+    /* Transição de animação em 0.3s */
+    transition: 0.3s;
+}
+
+/* Posição do cabeçalho */
+.topic-css{
+    padding-top: 50px;
+    padding-right: 5%;
+    float: right;
+}
+
+/* Personalização do botão do cabeçalho */
+.header-button{
+    /* Fonte de texto */
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+    /* Customização */
+    padding: 20px;
+    border-radius: 7px;
+    text-decoration: none;
+    color:#e8e8e8;
+    background-color: #632eb8;
+
+    /* Transição de animação em 0.3s */
+    transition: 0.4s;
+}
+
+/* Alteração de cor quando o mouse se sobrepor no botão */
+.header-button:hover{
+    /* Cor de fundo */
+    background-color: #5767f2;
+
+    /* Brilho ao redor do botão */
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
+    box-shadow: 0px 0px 16px 0px rgba(46,58,230,1);
+
+    /* Transição de escala em 1.1x de seu tamanho original*/
+    transform: scale(1.1);
+}
+
+/* Botão de abrir o modal */
+.open-modal{
+    /* Definição como invisivel no formato desktop */
+    display: none;
+
+    /* Customização */
+    border: 0;
+    background-color: rgba(0,0,0,0.0);;
+    padding-right: 30px;
+    font-size: 250%;
+    color: #632eb8;
+
+    /* Transição de animação em 0.3s */
+    transition: 0.3s;
+}
+
+/* Mudar de cor quando sobrepor o mouse */
+.open-modal:hover{
+    color: #5767f2;
+
+    /* Brilho ao redor do botão */
+    filter: drop-shadow(0px 0px 15px rgba(59, 37, 255, 0.5));
+}
+
+/* Atributos para o modal, em base manter em None e executará o block quando clicado o botão de abrir */
+.modal{
+   /* Definição como invisivel até que seja executado no botão */ 
+   display:none;
+
+   /* Posição no topo dos restantes*/
+   z-index: 5;
+
+   /* Posição do Modal */
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+
+/* Conteúdo do modal */
+.modal-content{
+    /* Tamanho */
+    width: 50%;
+    margin: -5% 50%;
+
+    /* Cor e Borda*/
+    background-color: #e8e8e8;
+    border-radius: 10px;
+
+     /* Sombra */
+     -moz-box-shadow: -1px -1px 50px -10px rgba(115,115,115,0.75);
+     -webkit-box-shadow: -1px -1px 50px -10px rgba(115,115,115,0.75);
+     box-shadow: -1px -1px 50px -10px rgba(115,115,115,0.75);
+}
+
+/* Direção dos botões em coluna */
+.modal-nav{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+/* Design do botão que fica no modal */
+.modal-button{
+    /* Definição da fonte */
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.3s;
+
+    /* Tamanho */
+    width: 100%;
+
+    /* Customização */
+    padding: 10px;
+    text-decoration: none;
+    color: #212121;
+}
+
+/* Caso sobrepor o mouse, mudar de cor */
+.modal-button:hover{
+    background-color: #5767f2;
+    color: #e8e8e8;
+}
+
+/* Linha Roxa */
+.purple-background{
+    /* Camada */
+    z-index: -2;
+
+    /* Cor de fundo */
+    background-color: #632eb8;
+
+    /* Tamanho e posição */
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+}
+
+/* Plano de fundo escuro */
+.black-background{
+    z-index: -2;
+    background-color: #212121;
+    width: 100%;
+    height: 3300px;
+}
+
+/* Posição do trailer do jogo */
+.iframe-position{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+/* Tamanho do trailer */
+iframe{
+    width: 840px;
+    height: 472px;
+}
+
+
+/* Tamanho e posição do video que irá reproduzir curtas gameplays do jogo */
+.video{
+    width: 100%;
+    height: 60vh;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+/* Aplicação de escuridez e tamanho */
+.video-background{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 60vh;
+    filter: brightness(50%);
+    z-index: 1;
+}
+
+
+/* Logo do Jogo que irá sobrepor o vídeo */
+.game-css{
+    position: relative;
+    top:20%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 40%;
+}
+
+/* Título sobre o jogo */
+.title-about{
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    color: #e8e8e8;
+}
+
+/* Título de disponibilidade do jogo */
+.title-available{
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #e8e8e8;
+}
+
+.game-info{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 50%;
+}
+
+.info-text{
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    text-align: center;
+    font-size: 35px;
+    color: #e8e8e8;
+}
+
+.features-title{
+    font-size: 40px;
+}
+
+.features-content{
+    position: absolute;
+    left: 55%;
+    width: 40%;
+}
+
+ul{
+    font-size: 25px;
+    text-align: left;
+}
+ul li{
+    padding: 20px;
+}
+
+.info-features{
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #e8e8e8;
+    display: flex;
+    margin-top: 200px;
+    background-color: #632eb8;
+    width: 100%;
+    height: 500px;
+}
+
+.info-image-size{
+    background-size:cover;
+    height: 500px;
+    width: 50%;
+
+    animation-name: changeAnimation;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeAnimation{
+    0%{
+        background-image: url(../imagem/game1.jpg);
+    }
+    15%{
+        background-image: url(../imagem/game1.jpg);
+    }
+    30%{
+        background-image: url(../imagem/game2.jpg);
+    }
+    45%{
+        background-image: url(../imagem/game2.jpg);
+    }
+    60%{
+        background-image: url(../imagem/game3.jpg);
+    }
+    75%{
+        background-image: url(../imagem/game3.jpg);
+    }
+    90%{
+        background-image: url(../imagem/game1.jpg);
+    }
+    100%{
+        background-image: url(../imagem/game1.jpg);
+    }
+}
+
+.itch-css{
+    text-align: center;
+    width: 100%;
+}
+
+.itch-image{
+    width: 25%;
+    transition: 0.3s;
+}
+.itch-image:hover{
+    transform: scale(1.2);
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.5));
+}
+
+.info-characters{
+    width: 100%;
+    height: 15%;
+    background-color: #632eb8;
+    margin: auto;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.flex-column{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image-characters{
+    padding: 20px;
+    width: 40%;
+}
+
+
+.image-css-characters{
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+    width: 83%;
+    background: linear-gradient(28deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(252,209,159,1) 0%, rgba(207,122,91,1) 25%, rgba(33,33,33,1) 65%, rgba(33,33,33,1) 100%);
+    border: solid 3px #431381;
+    border-radius: 25px;
+    border: solid 5px #e8e8e8;
+
+    transition: 0.3s;
+}
+
+.name-characters{
+    display: flex;
+    height: 152px;
+}
+
+.name-char{
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+
+    color: #e8e8e8;
+
+    margin-top: 30px;
+
+    transition: 0.3s;
+}
+
+.button-change{
+    margin-top: 30px;
+    font-size: 30px;
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    border: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    transition: 0.3s;
+}
+
+.button-change:hover{
+    background-color: #212121;
+    color: #e8e8e8;
+}
+
+.describe-characters{
+    height: 300px;
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: #e8e8e8;
+    padding: 0;
+}
+
+.describe-txt{
+    height: 85%;
+    transition: 0.3s;
+    width: 70%;
+}
+
+/* Nome do Personagem */
+.title-characters{
+    font-family: "Pixelify Sans", sans-serif;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #e8e8e8;
+    margin-top: 50px;
+}
+
+/* Rodapé do WebSite */
+.info-footer{
+    width: 100%;
+    height: 500px;
+    background-color: #212121;
+}
+
+/* Definição pro tipo flex */
+.info-footer-contend{
+    display: flex;
+    justify-content: center;
+    grid-column-start: auto;
+    
+}
+
+/* Aba com os conteúdos do rodapé */
+.tab-footer{
+    width: 100%;
+    position: relative;
+    transform: translate(0%,35%);
+    height: 300px;
+}
+
+/* Personalização do contato */
+.tab-footer.contact{
+    background-color: #e8e8e8;
+    color: #632eb8;
+    text-align: center;
+}
+
+.contact-title{
+    color: #632eb8;
+}
+
+/* Definição de cor da Aba de Contato */
+.contact-text{
+    /* Cor do texto */
+    color: #632eb8;
+
+    /* Posição */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Transição de animação em 0.3s */
+    transition: 0.3s;
+}
+
+.contact-text:hover{
+    color: #b457f2;
+}
+
+/* Personalização da Navegação */
+.tab-footer.navegation{
+    background-color: #632eb8;
+}
+
+/* Personalização das Redes Sociais */
+.tab-footer.socialmedia{
+    background-color: #414141;
+}
+
+/* Títulos das Abas */
+h2{
+    padding: 0px;
+    font-size: 30px;
+    text-align: center;
+    color: #e8e8e8;
+}
+
+/* Colorindo os redirecionamento */
+a{
+    color: #e8e8e8;
+}
+
+/* Definindo os textos da nav */
+span{
+    /* Posição */
+    position: relative;
+    left: 3%;
+
+    /* Customização */
+    font-size: 20px;
+    color: #e8e8e8;
+}
+
+/* Posicionamento dos botões do Rodapé */
+.nav-css{
+    text-align: center;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Personalização do texto */
+.a-css{
+    /* Fonte */
+    font-size: 20px;
+    line-height: 2.3;
+    float: none;
+    text-align: center;
+    text-decoration: none;
+
+    /* Transição de animação em 0.3s */
+    transition-duration: 0.3s;
+}
+
+/* Troca de cor quando sobreposto o curso do mouse nela */
+.a-css:hover{
+    color: #b457f2;
+
+    /* Transição de escala em 1.1x de seu tamanho original */
+    transform: scale(1.1);
+}
+
+/* Nome da empresa */
+.enterprise-name{
+    /* Posição */
+    position: relative;
+    top: 23%;
+    text-align: center;
+
+    /* Fonte */
+    color:#bdbdbd;
+    font-size: large;
+}
+
+@media only screen and (max-width:768px){
+    body{
+        max-width: 100%;
+    }
+
+     /* Formatação do cabeçalho do WebSite */
+    /* Definição do flex em linha */
+    .header-css{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /* Definição do tamanho da logo a esquerda do cabeçalho */
+    .image-css{
+        width: 40%;
+    }
+
+    /* Ligando o botão lateral para abrir os botões */
+    .open-modal{
+        display: block;
+    }
+
+    /* Desligando os botões do desktop */
+    .topic-css{
+        display: none;
+    }
+
+    .purple-background{
+        height: 50px;
+    }
+
+    iframe{
+        width:420px;
+        height:236px;
+    }
+
+    .video{
+        height: 40vh;
+    }
+
+    .video-background{
+        height: 40vh;
+    }
+
+    .game-css{
+        width: 70%;
+    }
+
+    .title-about{
+        font-size: 50px;
+    }
+
+    .game-info{
+        width: 75%;
+    }
+
+    .info-text{
+        font-size: 20px;
+    }
+
+    .itch-image{
+        width: 75%;
+    }
+
+    .info-features{
+        height: 700px;
+        flex-direction: column;
+    }
+
+    .info-image-size{
+        width: 100%;
+        height: 350px;
+    }
+
+    ul li{
+        padding: 10px;
+    }
+
+    .features-content{
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    .features-title{
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-characters{
+        flex-direction: column;
+        height: 32.5%;
+    }
+
+    .flex-column{
+        width: 100%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image-characters{
+        padding: 0;
+        margin: auto;
+        display:flex;
+        width: 100%;
+    }
+
+    .image-css-characters{
+        padding: 0;
+        margin: auto;
+    }
+
+    .name-cha
+
+    .button-change{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .describe-characters{
+        width: 90%;
+    }
+
+    .describe-txt{
+        width: 100%;
+    }
+
+    /* Definição do tamanho do rodapé do WebSite */
+    .info-footer{
+        height: 750px;
+    }
+
+    /* Definição do flex em coluna para ajuste */
+    .info-footer-contend{
+        flex-direction: column;   
+    }
+
+    /* Definição dos tamanho da tab */
+    .tab-footer{
+        height: 200px;
+    }
+
+    /* Definição das posições dos botões do rodapé */
+    .nav-css{
+        top: 60%;
+    }
+
+    /* Definição da fonte dos links */
+    .a-css{
+        font-size: 15px;
+        line-height: 2;
+    }
+
+    /* Definição da posição do nome da empresa no final do WebSite */
+    .enterprise-name{
+        top: 10%;
+    }
+}
+
+@media only screen and (max-width:1980px){
+    .image-css-characters{
+        width: 67.5%;
+    }
+}

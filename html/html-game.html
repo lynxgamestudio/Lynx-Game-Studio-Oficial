@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Associação com o arquivo CSS para personalização do WebSite-->
+        <link rel="stylesheet" href="../css/style-game.css">
+    
+        <!-- Implementação de icones nos textos -->
+        <script src="https://kit.fontawesome.com/2627adf56e.js" crossorigin="anonymous"></script>
+    
+        <!-- Fonte Work Sans-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <!-- Fonte Pixelify Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    
+        <!-- Implementação do icone localizado na barra acima do navegador -->
+        <link rel="shortcut icon" href="../imagem/lynx-logo.ico" type="image/x-icon">
+    
+        <!-- Título do WebSite-->
+        <title>Burning Minds</title>
+    </head>
+<body>
+    <!-- Cabeçalho do website, localizado na superior do website -->
+    <header>
+        <div class="header-css">
+            <!-- Logo de nossa empresa, ao clicar, ela será redirecionado ao website sobre a empresa-->
+            <div class="logo-css">
+                <img src="../imagem/lynx1.svg" alt="#" class="image-css">
+            </div>
+
+            <!-- Botões que redirecionam para as outras páginas -->
+            <div class="topic-css">
+                <nav>
+                    <!-- Botão de encaminhamento a página principal -->
+                    <a href="../index.html" class="header-button">Página principal</a>
+                    <!-- Botão de encaminhamento a página sobre o jogo -->
+                    <a href="html-game.html" class="header-button">Burning Minds</a>
+                    <!-- Botão  de encaminhamento a página sobre a empresa responsável-->
+                    <a href="html-about.html" class="header-button">Sobre nós</a>
+                </nav>
+            </div>
+
+            <!-- Versão mobile/redimensionado abaixo -->
+
+            <!-- Script para executar o modal -->
+            <script src="../js/modal.js"></script>
+
+            <!-- Botão que executa o modal -->
+            <div class="open-modal" onclick="openModal()">
+                <i class="fa-solid fa-bars" class="bars-modal"></i>
+            </div>
+        </div>
+
+        <!-- Modal que mostrará os botões que redirecionam para as outras páginas -->
+        <div class="modal" id="myModal">
+            <!-- Conteúdo do Modal -->
+            <div class="modal-content">
+                <nav class="modal-nav">
+                    <!-- Botão de encaminhamento a página principal -->
+                    <a href="../index.html" class="modal-button">Página principal</a>
+                    <!-- Botão de encaminhamento a página sobre o jogo -->
+                    <a href="html-game.html" class="modal-button">Burning Minds</a>
+                    <!-- Botão  de encaminhamento a página sobre a empresa responsável-->
+                    <a href="html-about.html" class="modal-button">Sobre nós</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Fundo preto que haverá os conteúdo de nossa empresa -->
+        <div class="black-background">
+            <div class="purple-background">
+            </div>
+            <!-- Trailer do jogo -->
+            <div class="iframe-position">
+                <iframe src="https://www.youtube.com/embed/Ah7i5EFVDqA?si=uhbG9a3VI0c3Nmot" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            
+            <!-- Um video executará em looping de curtas gameplays do jogo -->
+            <div class="video">
+                <video class="video-background" autoplay loop muted>
+                    <source src="../imagem/teste.mp4" type="video/mp4">
+                </video>
+                <!-- Imagem da logo do jogo e a mensagem de "EM BREVE"-->
+                <img src="../imagem/game-logo.png" alt="#" class="game-css">
+            </div>
+
+
+            <!-- Aba com informações sobre o jogo -->
+            <div class="infomation-game">
+                <div class="game-info">
+                    <h1 class="title-about">Sobre</h1>
+                    <p class="info-text">Burning Minds é um jogo de terror-psicológico que retrata a vida de um jovem adulto chamado Michael Alden, que luta contra seus pesadelos na busca da verdade de seu passado. </p>
+                </div>
+            </div>
+
+            <h1 class="title-available">Disponivel na:</h1>
+            <a href="https://lynx-game-studio.itch.io/burning-minds">
+                <div class="itch-css">
+                    <img src="../imagem/itchio-logo-white.svg" alt="#" class="itch-image">
+                </div>
+            </a>
+
+            <div class="info-features">
+                <div class="info-image-size">
+                </div>
+                <div class="features-content">
+                    <h1 class="features-title">Características</h1>
+                    <ul>
+                        <li>Ambientes diversos de acordo com a cada memória de Michael </li>
+                        <li>Sistemas de ataque baseado na criatividade em desenhar </li>
+                        <li>Sistema de coletáveis que influenciará no decorrer da história</li>
+                    </ul>
+                </div>
+            </div>
+
+            <script src="../js/change-character.js"></script>
+            <h1 class="title-characters">Personagens</h1>
+            <div class="info-characters">
+                <!-- Imagem do personagem que estará no jogo -->
+                <div class="image-characters">
+                    <img src="../imagem/character.png" alt="#" class="image-css-characters" id="img">
+                </div>
+                <div class="flex-column">
+                    <div class="name-characters">
+                        <!-- Botão que vai para o personagem anterior -->
+                        <button class="button-change" onclick="opposite()">
+                            <i class="fa-solid fa-angle-left"></i>‎ <!-- Caractére Invisivel -->
+                        </button>
+    
+                        <!-- Nome do Personagem-->
+                        <h1 class="name-char" id="name">Michael Alden</h1>
+    
+                        <!-- Botão que vai para o próximo personagem -->
+                        <button class="button-change" onclick="next()">
+                            <i class="fa-solid fa-angle-right"></i>‎ <!-- Caractére Invisivel -->
+                        </button>
+                    </div>
+                    <!-- Descrição do personagem -->
+                    <div class="describe-characters">
+                        <p class="describe-txt" id="txt-describe">Michael alden é um jovem adolescente protagonista do jogo "Burning Minds". Devido a más relações com seus pais e um acidente fatal ocorrido no parque, Michael presencia uma forma negativa de ti e com isto ele basta explorar em seus sonhos em busca de respostas, enquanto luta contra os seus transtornos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé do WebSite, nela haverá novamente atalhos de outras páginas e o contato de nossa empresa-->
+        <div class="info-footer">
+            <div class="info-footer-contend">
+                <!-- Aba contendo o contato de nossa empresa -->
+                <div class="tab-footer contact">
+                    <h2 class="contact-title"> Contato </h1>
+                    <!-- Link que redireciona a página de email para contato -->
+                    <a href="mailto:tccmemoriasemchamas7@example.com" class="contact-text"><span class="contact-text">tccmemoriasemchamas7@gmail.com</span></a>
+                </div>
+
+                <!-- Aba contendo as páginas restante de nosso WebSite -->
+                <div class="tab-footer navegation">
+                    <h2> Navegação </h1>
+                    <!-- Redirecionamento a outras páginas -->
+                    <nav class="nav-css">
+                        <a href="../index.html" class="a-css">Página principal</a> <br>
+                        <a href="html-game.html" class="a-css">Burning Minds</a> <br>
+                        <a href="html-about.html" class="a-css">Sobre nós</a> <br>
+                    </nav>
+                </div>
+
+                <!-- Aba contendo as redes sociais de nossa empresa-->
+                <div class="tab-footer socialmedia">
+                    <h2> Redes Sociais </h1>
+                    <!-- Redirecionamento as redes sociais-->
+                    <nav class="nav-css">
+                        <a href="https://www.instagram.com/tcc_lynxgamestudiocia?igsh=cjYwYWd4N20xcnhv" class="a-css">Instagram</a> <br>
+                        <a href="https://www.youtube.com/channel/UCjL69GU4xWROPUccE3abnlw" class="a-css">Youtube</a> <br>
+                    </nav>
+                </div>
+            </div>
+            <p class="enterprise-name"> © LynX Game Studio 2024</p>
+        </div>
+    </main>
+</body>
+</html>

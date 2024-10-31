@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Associação com o arquivo CSS para personalização do WebSite-->
+    <link rel="stylesheet" href="../css/style-about.css">
+
+    <!-- Implementação de icones nos textos -->
+    <script src="https://kit.fontawesome.com/2627adf56e.js" crossorigin="anonymous"></script>
+
+    <!-- Fonte Work Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Fonte Pixelify Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- Implementação do icone localizado na barra acima do navegador -->
+    <link rel="shortcut icon" href="../imagem/lynx-logo.ico" type="image/x-icon">
+
+    <!-- Título do WebSite-->
+    <title>Sobre a LynX</title>
+</head>
+
+<body>
+    <!-- Cabeçalho do website, localizado na superior do website -->
+    <header>
+        <div class="header-css">
+            <!-- Logo de nossa empresa, ao clicar, ela será redirecionado ao website sobre a empresa-->
+            <div class="logo-css">
+                <img src="../imagem/lynx1.svg" alt="#" class="image-css">
+            </div>
+
+            <!-- Botões que redirecionam para as outras páginas -->
+            <div class="topic-css">
+                <nav>
+                    <!-- Botão de encaminhamento a página principal -->
+                    <a href="../index.html" class="header-button">Página principal</a>
+                    <!-- Botão de encaminhamento a página sobre o jogo -->
+                    <a href="html-game.html" class="header-button">Burning Minds</a>
+                    <!-- Botão  de encaminhamento a página sobre a empresa responsável-->
+                    <a href="html-about.html" class="header-button">Sobre nós</a>
+                </nav>
+            </div>
+
+            <!-- Versão mobile/redimensionado abaixo -->
+
+            <!-- Script para executar o modal -->
+            <script src="../js/modal.js"></script>
+
+            <!-- Botão que executa o modal -->
+            <div class="open-modal" onclick="openModal()">
+                <i class="fa-solid fa-bars" class="bars-modal"></i>
+            </div>
+        </div>
+
+        <!-- Modal que mostrará os botões que redirecionam para as outras páginas -->
+        <div class="modal" id="myModal">
+            <!-- Conteúdo do Modal -->
+            <div class="modal-content">
+                <nav class="modal-nav">
+                    <!-- Botão de encaminhamento a página principal -->
+                    <a href="../index.html" class="modal-button">Página principal</a>
+                    <!-- Botão de encaminhamento a página sobre o jogo -->
+                    <a href="html-game.html" class="modal-button">Burning Minds</a>
+                    <!-- Botão  de encaminhamento a página sobre a empresa responsável-->
+                    <a href="html-about.html" class="modal-button">Sobre nós</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Principal do WebSite -->
+    <main>
+        <!-- Fundo preto que haverá os conteúdo de nossa empresa -->
+        <div class="black-background">
+            <!-- Transição roxo -->
+            <div class="purple-background">
+            </div>
+
+            <!-- Logo de nossa empresa -->
+            <img src="../imagem/logo-branco.svg" alt="#" class="enterprise-image">
+
+            <!-- Informações detalhadas de nossa empresa -->
+            <div class="info-enterprise">
+                <p class="info-text"> Somos a LynX Game Studio. Uma pequena empresa desenvolvedora de jogos 2D, visando tratar de assuntos sociais através da trama de nossos jogos. O objetivo de nossa empresa é entreter os jogadores de nossos produtos afim de trazer uma reflexão
+                    através da diversão.
+                    <br> Ela foi fundada pelos estudantes do curso técnico em informática no ano de 2024. </p>
+            </div>
+
+            <div class="enterprise-mission-vision-values">
+                <!-- Aba que fala a missão de nossa empresa -->
+                <div class="ab-enterprise missao">
+                    <div class="logo">
+                        <i class="fa-solid fa-bullseye"></i>
+                        <p class="title-size">Missão</p>
+                    </div>
+                    <div class="ab-text">
+                        <p>Criar jogos envolventes e educativos que abordem temáticas sociais relevantes, promovendo a conscientização e a empatia. Nosso ojetivo é utilizar o poder do entretenimento interativo para educar e inspirar mudanças positivas na
+                            sociedade.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Aba que fala a visão de nossa empresa -->
+                <div class="ab-enterprise visao">
+                    <div class="logo">
+                        <i class="fa-regular fa-eye"></i>
+                        <p class="title-size">Visão</p>
+                    </div>
+                    <div class="ab-text">
+                        <p>Ser reconhecida como a principal desenvolvedora de jogos sociais, estabelecendo um novo padrão para a indústria de jogos em termos de impacto social e educacional. Queremos ser uma referência global na criação de experiências de
+                            jogos que não apenas divertem, mas também transformam perspectivas e comportamentos.</p>
+                    </div>
+                </div>
+
+                <!-- Aba que fala os valores de nossa empresa -->
+                <div class="ab-enterprise">
+                    <div class="logo">
+                        <i class="fa-solid fa-gem"></i>
+                        <p class="title-size">Valores</p>
+                    </div>
+                    <div class="ab-text">
+                        <ul>
+                            <li>Impacto Social: Priorizar questões sociais importantes.</li>
+                            <li>Inovação: Integrar temáticas sociais de forma criativa.</li>
+                            <li>Educação: Proporcionar conhecimento e novas perspectivas.</li>
+                            <li>Inclusão: Promover diversidade e inclusão.</li>
+                            <li>Responsabilidade: Agir com responsabilidade social</li>
+                            <li>Colaboração: Trabalhar com ONGs, Desenvolvedores e Especialistas para autenticidade e eficácia.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nela haverá informações sobre cada membro da equipe como a suas
+            especialidades, formações academicas e entre outros -->
+            <h1 class="title-team"> Equipe </h1>
+
+            <!-- Linha roxa -->
+            <div class="line-purple">
+            </div>
+
+            <!-- Membro Alysson -->
+            <div class="member-1">
+                <!-- Imagem do membro -->
+                <img src="../imagem/member1.jpg" alt="#" class="img-member m1">
+                <!-- Descrição do membro-->
+                <div class="member-info1">
+                    <h3 class="name-member m1"> Alysson Gabriel </h3>
+                    <p class="text-member m1">Sou líder responsável pela elaboração da história do jogo "Burning Minds". Incluindo documentação do projeto, financeira do jogo e outros fins. Garantindo que nenhuma informação esteja faltando.</p>
+                </div>
+            </div>
+
+            <!-- Membro Cauã -->
+            <div class="member-2">
+                <!-- Imagem do membro -->
+                <img src="../imagem/member2.jpg" alt="#" class="img-member m2">
+                <!-- Descrição do membro-->
+                <div class="member-info2">
+                    <h3 class="name-member m2"> Cauã Faria </h3>
+                    <p class="text-member m2">Responsável pelo desenvolvimento Back-end do jogo "Burning Minds". Incluindo o desenvolvimento de mecânicas, animações, e todo e qualquer código por trás do jogo, garantindo que tudo funcione perfeitamente nos bastidores por trás do
+                        jogo, além de auxiliar no level-Designing.</p>
+                </div>
+            </div>
+
+            <!-- Membro Diego -->
+            <div class="member-3">
+                <!-- Imagem do membro -->
+                <img src="../imagem/member3.jpg" alt="#" class="img-member m3">
+                <!-- Descrição do membro-->
+                <div class="member-info3">
+                    <h3 class="name-member m3"> Diego Augusto </h3>
+                    <p class="text-member m3">Sou designer geral do projeto. Trabalho na montagem e elaboração dos mapas, personagens e ambientação. Programador Front-End do WebSite, procurando sempre mantê-lo atualizado e funcionando perfeitamente.</p>
+                </div>
+            </div>
+
+            <!-- Linha roxa -->
+            <div class="line-purple">
+            </div>
+
+            <!-- Nela, haverá fotos de nosso progresso de desenvolvimento do site e do jogo -->
+            <div class="team-photos">
+                <h1 class="title-team"> Nosso trabalho </h1>
+
+                <!-- Script que realiza a troca de imagens mostrando nosso desenvolvimento -->
+                <script src="../js/change.js"></script>
+
+                <!-- Botões com a imagem centralizada-->
+                <div class="button-image">
+                    <!-- Botão de retroceder a imagem anterior -->
+                    <button class="button-change" onclick="opposite()">
+                        <i class="fa-solid fa-angle-left" id="button-position"></i>‎ <!-- Caractére Invisivel -->
+                    </button>
+
+                    <!-- Imagens da equipe -->
+                    <img src="../imagem/photo_1.jpg" alt="#" class="image-process" id="img">
+
+                    <!-- Botão de procede a imagem a seguir-->
+                    <button class="button-change" onclick="next()">
+                        <i class="fa-solid fa-angle-right" id="button-position"></i>‎ <!-- Caractére Invisivel -->
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Rodapé do WebSite, nela haverá novamente atalhos de outras páginas e o contato de nossa empresa-->
+        <div class="info-footer">
+            <div class="info-footer-contend">
+                <!-- Aba contendo o contato de nossa empresa -->
+                <div class="tab-footer contact">
+                    <h2 class="contact-title"> Contato </h1>
+                        <!-- Link que redireciona a página de email para contato -->
+                        <a href="mailto:tccmemoriasemchamas7@example.com" class="contact-text"><span class="contact-text">tccmemoriasemchamas7@gmail.com</span></a>
+                </div>
+
+                <!-- Aba contendo as páginas restante de nosso WebSite -->
+                <div class="tab-footer navegation">
+                    <h2> Navegação </h1>
+                        <!-- Redirecionamento a outras páginas -->
+                        <nav class="nav-css">
+                            <a href="../index.html" class="a-css">Página principal</a> <br>
+                            <a href="html-game.html" class="a-css">Burning Minds</a> <br>
+                            <a href="html-about.html" class="a-css">Sobre nós</a> <br>
+                        </nav>
+                </div>
+
+                <!-- Aba contendo as redes sociais de nossa empresa-->
+                <div class="tab-footer socialmedia">
+                    <h2> Redes Sociais </h1>
+                        <!-- Redirecionamento as redes sociais-->
+                        <nav class="nav-css">
+                            <a href="https://www.instagram.com/tcc_lynxgamestudiocia?igsh=cjYwYWd4N20xcnhv" class="a-css">Instagram</a> <br>
+                            <a href="https://www.youtube.com/channel/UCjL69GU4xWROPUccE3abnlw" class="a-css">Youtube</a> <br>
+                        </nav>
+                </div>
+            </div>
+            <p class="enterprise-name"> © LynX Game Studio 2024</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!-- Início do WebSite -->
+<!DOCTYPE html>
+
+<!-- Definição de linguagem em pt-br para caracteres especiais -->
+<html lang="pt-br">
+
+<!-- Cabeça do Website, onde ficarão links de css, icones e scripts -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Associação com o arquivo CSS para personalização do WebSite-->
+    <link rel="stylesheet" href="css/style-menu.css">
+
+    <!-- Implementação de icones nos textos -->
+    <script src="https://kit.fontawesome.com/2627adf56e.js" crossorigin="anonymous"></script>
+
+    <!-- Fonte Work Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Fonte Pixelify Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- Implementação do icone localizado na barra acima do navegador -->
+    <link rel="shortcut icon" href="imagem/lynx-logo.ico" type="image/x-icon">
+
+    <!-- Título do WebSite-->
+    <title>Lynx Game Studio</title>
+</head>
+
+<body>
+    <!-- Cabeçalho do website, localizado na superior do website -->
+    <header>
+        <div class="header-css">
+            <!-- Logo de nossa empresa, ao clicar, ela será redirecionado ao website sobre a empresa-->
+            <div class="logo-css">
+                <img src="imagem/lynx1.svg" alt="#" class="image-css">
+            </div>
+
+            <!-- Botões que redirecionam para as outras páginas -->
+            <div class="topic-css">
+                <nav>
+                    <!-- Botão de encaminhamento a página principal -->
+                    <a href="index.html" class="header-button">Página principal</a>
+                    <!-- Botão de encaminhamento a página sobre o jogo -->
+                    <a href="html/html-game.html" class="header-button">Burning Minds</a>
+                    <!-- Botão  de encaminhamento a página sobre a empresa responsável-->
+                    <a href="html/html-about.html" class="header-button">Sobre nós</a>
+                </nav>
+            </div>
+
+            <!-- Versão mobile/redimensionado abaixo -->
+
+            <!-- Script para executar o modal -->
+            <script src="js/modal.js"></script>
+
+            <!-- Botão que executa o modal -->
+            <div class="open-modal" onclick="openModal()">
+                <i class="fa-solid fa-bars" class="bars-modal"></i>
+            </div>
+        </div>
+
+        <!-- Modal que mostrará os botões que redirecionam para as outras páginas -->
+        <div class="modal" id="myModal">
+            <!-- Conteúdo do Modal -->
+            <div class="modal-content">
+                <nav class="modal-nav">
+                    <!-- Botão de encaminhamento a página principal -->
+                    <a href="index.html" class="modal-button">Página principal</a>
+                    <!-- Botão de encaminhamento a página sobre o jogo -->
+                    <a href="html/html-game.html" class="modal-button">Burning Minds</a>
+                    <!-- Botão  de encaminhamento a página sobre a empresa responsável-->
+                    <a href="html/html-about.html" class="modal-button">Sobre nós</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Principal do WebSite -->
+    <main>
+        <!-- Plano de fundo com uma logo sobre o jogo que até o momento está em breve -->
+        <div class="video-background-css">
+            <!-- Um video executará em looping de curtas gameplays do jogo -->
+            <div class="video">
+                <video class="video-background" autoplay playsinline loop muted>
+                    <source src="imagem/teste.mp4" type="video/mp4">
+                </video>
+                <div class="image-game">
+                    <!-- Imagem da logo do jogo e a mensagem de "EM BREVE"-->
+                    <img src="imagem/game-logo.png" alt="#" class="game-css">
+
+                    <p class="warning-text"> EM BREVE </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Aba com informações resumida da empresa Lynx Studio -->
+        <div class="info-enterprise-css">
+            <!-- Conteúdo da Aba-->
+            <div class="info-enterprise-content">
+                <!-- Título -->
+                <h1> Quem somos nós? </h1>
+
+                <!-- Texto sobre a empresa -->
+                <p class="info-text"> Somos a LynX Game Studio. Uma pequena empresa desenvolvedora de jogos 2D, visando tratar de assuntos sociais através da trama de nossos jogos. O objetivo de nossa empresa é entreter os jogadores de nossos produtos afim de trazer uma reflexão
+                    através da diversão. </p>
+
+                <!-- Botão que redireciona ao WebSite da empresa -->
+                <button class="about-css"> Mais sobre nós </button></a>
+            </div>
+            <!-- Logo completa da empresa LynX Game Studio -->
+            <img src="imagem/enterprise_black.svg" alt="#" class="enterprise-image">
+        </div>
+
+        <!-- Aba com informações sobre a rede social de nossa empresa-->
+        <div class="info-socialmedia">
+            <div class="info-socialmedia-content">
+                <!-- Título da Aba-->
+                <h1 class="socialmedia-title" id="instagram">Redes Sociais</h1>
+
+                <!-- Redirecionamento para as Redes Sociais da Empresa -->
+                <div class="navs-socialmedia">
+                    <nav class="navs-setting">
+                        <!-- Redirecionamento para o Instagram da Empresa onde informaremos sobre o jogo
+                        como progressão, ilustrações e outros-->
+                        <a href="https://www.instagram.com/tcc_lynxgamestudiocia?igsh=cjYwYWd4N20xcnhv" class="social-button instagram">
+                            <!-- Icon do Instagram -->
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <!-- Redirecionamento para o Youtube da Empresa onde informaremos sobre o jogo
+                         como trailers, gameplays e outros-->
+                        <a href="https://www.youtube.com/channel/UCjL69GU4xWROPUccE3abnlw" class="social-button youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé do WebSite -->
+    <footer>
+        <!-- Rodapé do WebSite, nela haverá novamente atalhos de outras páginas e o contato de nossa empresa-->
+        <div class="info-footer">
+            <div class="info-footer-contend">
+                <!-- Aba contendo o contato de nossa empresa -->
+                <div class="tab-footer contact">
+                    <h2 class="contact-title"> Contato </h1>
+                        <!-- Link que redireciona a página de email para contato -->
+                        <a href="mailto:lynxgamestudio.contact@gmail.com" class="contact-text"><span class="contact-text">lynxgamestudio.contact@gmail.com</span></a>
+                </div>
+
+                <!-- Aba contendo as páginas restante de nosso WebSite -->
+                <div class="tab-footer navegation">
+                    <h2> Navegação </h1>
+                        <!-- Redirecionamento a outras páginas -->
+                        <nav class="nav-css">
+                            <a href="index.html" class="a-css">Página principal</a> <br>
+                            <a href="html/html-game.html" class="a-css">Burning Minds</a> <br>
+                            <a href="html/html-about.html" class="a-css">Sobre nós</a> <br>
+                        </nav>
+                </div>
+
+                <!-- Aba contendo as redes sociais de nossa empresa-->
+                <div class="tab-footer socialmedia">
+                    <h2> Redes Sociais </h1>
+                        <!-- Redirecionamento as redes sociais-->
+                        <nav class="nav-css">
+                            <a href="https://www.instagram.com/tcc_lynxgamestudiocia?igsh=cjYwYWd4N20xcnhv" class="a-css">Instagram</a> <br>
+                            <a href="https://www.youtube.com/channel/UCjL69GU4xWROPUccE3abnlw" class="a-css">Youtube</a> <br>
+                        </nav>
+                </div>
+            </div>
+            <!-- Copy Right -->
+            <p class="enterprise-name"> © LynX Game Studio 2024</p>
+        </div>
+    </footer>
+</body>
+
+</html>
