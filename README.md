@@ -6,7 +6,7 @@ Bem-vindo! Somos a LynX Games Studio, somos uma pequena empresa dedicada ao dese
   <img src="/imagem/logo-branco.svg" width="48%">
 </p>
 
-### Caso deseja entrar no site, [clique aqui!](https://lynxgamestudio.github.io/LynX-Game-Studio/)
+### Caso deseja entrar no site, [clique aqui!](https://lynxgamestudio.github.io/Lynx-Game-Studio-Oficial/)
 
 # Sobre a página
 ## Página Principal
