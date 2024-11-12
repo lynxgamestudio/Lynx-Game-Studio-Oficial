@@ -14,7 +14,4 @@ Bem-vindo! Somos a LynX Games Studio, somos uma pequena empresa dedicada ao dese
 
 <img src="https://github.com/lynxgamestudio/LynX-Game-Studio/assets/169953320/6b87b7ae-2493-45fb-9593-6fe69ce1447d" width="50%">
 <img src="https://github.com/lynxgamestudio/LynX-Game-Studio/assets/169953320/ba6c3506-91bc-43ce-987d-a259a176f7f7" width="50%">
-
-<p align="center">
-  <img src="https://github.com/lynxgamestudio/LynX-Game-Studio/assets/169953320/6b87b7ae-2493-45fb-9593-6fe69ce1447d" width="50%">
-</p>
+<img src="https://github.com/user-attachments/assets/ce0e34e2-2cfa-4f51-8773-990222707bd4" width="50%">
