@@ -316,7 +316,7 @@ ul li{
 
 @keyframes changeAnimation{
     0%{
-        background-image: url(../imagem/game1.jpg);
+        background-image: url(../imagem/game1.png);
     }
     15%{
         background-image: url(../imagem/game1.jpg);
@@ -334,10 +334,10 @@ ul li{
         background-image: url(../imagem/game3.jpg);
     }
     90%{
-        background-image: url(../imagem/game1.jpg);
+        background-image: url(../imagem/game1.png);
     }
     100%{
-        background-image: url(../imagem/game1.jpg);
+        background-image: url(../imagem/game1.png);
     }
 }
 
